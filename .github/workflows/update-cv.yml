@@ -24,7 +24,6 @@ jobs:
         with:
           repository: waitingsze/job-market
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          path: cv
 
       - name: Copy CV PDF to files folder
         run: |
