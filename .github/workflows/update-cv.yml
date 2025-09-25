@@ -1,0 +1,43 @@
+name: Update CV
+
+on:
+  repository_dispatch:
+    types: [update-cv]
+  workflow_dispatch:       # lets you run it manually too
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  update-cv:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Pages repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+      - name: Checkout private repo
+        uses: actions/checkout@v4
+        with:
+          repository: waitingsze/job-market
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          path: cv
+
+      - name: Copy CV PDF to files folder
+        run: |
+          mkdir -p files
+          cp cv/cv.pdf files/cv.pdf
+
+      - name: Commit and push if CV changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add files/cv.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "Update CV from private repo"
+            git push origin HEAD
+          else
+            echo "No changes to commit."
