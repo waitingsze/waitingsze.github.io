@@ -25,11 +25,12 @@ jobs:
         with:
           repository: waitingsze/job-market
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          path: private
 
       - name: Copy CV PDF to files folder
         run: |
           mkdir -p files
-          cp cv/cv.pdf files/cv.pdf
+          cp private/cv/cv.pdf files/cv.pdf
 
       - name: Commit and push if CV changed
         run: |
