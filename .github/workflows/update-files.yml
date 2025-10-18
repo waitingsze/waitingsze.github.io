@@ -37,6 +37,7 @@ jobs:
         run: |
           mkdir -p files
           cp cv/cv/cv.pdf files/sze_waiting_cv.pdf
+          cp cv/cv/resume.pdf files/sze_waiting_resume.pdf
           cp jmp/paper/main.pdf files/sze_waiting_jmp.pdf
 
       - name: Commit and push changes
