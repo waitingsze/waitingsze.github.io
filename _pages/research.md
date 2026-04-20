@@ -24,6 +24,6 @@ This paper develops and solves a model to examine how young adults’ savings de
 Works in Progress
 ----------------
 
-Parental Co-Residence and Marital Transitions (In Progress)
+Parental Co-Residence and Marital Transitions
 
 A structural model is built to examine the relationship between parental co-residence and marriage timing. I study how living arrangements may delay marriage, incorporating housing costs, preferences for independence, and match quality.
