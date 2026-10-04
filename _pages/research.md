@@ -15,7 +15,7 @@ Working Papers
 
 <a href="/files/sze_waiting_jmp.pdf" > The Dynamics of Co-Residence, Wealth, and Family Formation (JMP)</a>
 
-It has been increasingly common for adult children to live in their parents' home. This paper studies the causes and consequences of co-residence from the perspective of young adults. There are three main results. First, event studies indicate that household finances are surprisingly disconnected from co-residence changes. Second, marriage and fertility correlate strongly with housing independence. Third, plausibly exogenous rental housing unaffordability estimates only modestly affect co-residence. These findings should inform structural work and forecasts of housing demand. 
+It has become increasingly common for adult children to live in their parents' home. This paper studies the causes and consequences of parental co-residence from the perspective of young adults using data from the Panel Study of Income Dynamic Transition to Adulthood Supplement. I employ event study methods and an instrumental variables approach based on state-level rental housing unaffordability and find three main results. First, event studies indicate that household finances are surprisingly disconnected from co-residence changes. Second, marriage and fertility are strongly associated with housing independence. Third, plausibly exogenous variation in rental housing unaffordability only modestly affects co-residence.
 
 <a href="/files/third-year-paper.pdf" > Parental Co-Residence and Asset Accumulation </a>
 
