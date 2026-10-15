@@ -14,20 +14,20 @@ jobs:
 
     steps:
       - name: Checkout Pages repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           ref: master
 
       - name: Check CV repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: waitingsze/job-market
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           path: cv
 
       - name: Check JMP repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: waitingsze/chapter1
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
